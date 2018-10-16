@@ -178,4 +178,20 @@ body {
   font-size: 2rem;
   padding-left: 1rem;
 }
+
+.md-snackbar {
+  border-radius: 3rem !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.md-snackbar.md-position-center {
+  bottom: 2rem !important;
+  left: 2rem !important;
+  right: 2rem !important;
+  text-align: center;
+}
 /*# sourceMappingURL=ui.css.map */

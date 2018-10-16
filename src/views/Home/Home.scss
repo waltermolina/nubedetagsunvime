@@ -1,5 +1,5 @@
 #HomeContainer {
-  background: #fff;
+  background: orangered;
 
   min-height: 100%;
 
@@ -12,34 +12,7 @@
       font-weight: 200;
     }
   }
-  #homeVideo {
-    position: fixed;
-    z-index: 10;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    //z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    //background: url(images/poster.jpg) no-repeat;
-    background-size: cover;
-    transition: 1s opacity;
-    max-width: none;
-    max-height: none;
-  }
 
-  #videoOverlay {
-    position: fixed;
-    z-index: 11;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.8);
-  }
   #HomeContent {
     position: relative;
     z-index: 15;
@@ -50,49 +23,160 @@
       > #brand {
         margin-bottom: 2rem;
         display: flex;
-        flex-direction: row;
-        > img {
-          height: 4rem;
-          margin-right: 1rem;
+        flex-direction: column;
+        .logoCurso {
+          width: 12rem;
+          height: 12rem;
         }
+
         > header {
+          margin: 2rem 0;
           display: flex;
           flex-direction: column;
           > h1 {
+            margin: 0;
             text-transform: uppercase;
             font-weight: 200;
-            font-size: 1.2rem;
-            line-height: 1.2rem;
+            font-size: 1.6rem;
+            line-height: 1.6rem;
             color: rgba(255, 255, 255, 0.7);
           }
           > h2 {
+            display: none;
+          }
+          > p {
             text-transform: uppercase;
             font-weight: 200;
-            font-size: 1.2rem;
-            line-height: 1.4rem;
             margin: 0;
             color: rgba(255, 255, 255, 0.8);
+            &.line1 {
+              font-size: 3.1rem;
+              line-height: 3.1rem;
+            }
+            &.line2 {
+              font-size: 2.5rem;
+              line-height: 2.5rem;
+            }
           }
         }
       }
       > .welcome {
         color: #fff;
-        margin: 10rem 0 5rem 0;
+        margin: 5rem 0 5rem 0;
         h1 {
-          font-weight: 200;
+          font-weight: 100;
           color: #fff;
+          margin-bottom: 3rem;
+          text-shadow: 0 0 0.5rem #000;
         }
+        p {
+          font-weight: 100;
+          color: #fff;
+          font-size: 1.6rem;
+          text-shadow: 0 0 0.5rem #000;
+        }
+
         .welcomeBtn {
-          margin: 2rem 2rem 2rem 0;
+          margin: 1rem 2rem 1rem 0;
           border: 0.1rem solid rgba(255, 255, 255, 0.7);
           color: rgba(255, 255, 255, 0.7);
-          font-weight: 200;
+          font-weight: 500;
           text-decoration: none;
         }
         .addWordBtn {
           background: rgba(255, 255, 255, 0.7);
           color: rgba(0, 0, 0, 0.9);
           border: none;
+        }
+      }
+    }
+    footer {
+      border-top: 0.1rem solid rgba(255, 255, 255, 0.5);
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      article {
+        display: flex;
+        flex-direction: row;
+        .logoUnvime {
+          width: 6rem;
+          height: 6rem;
+          margin-right: 1rem;
+        }
+        header {
+          display: flex;
+          flex-direction: column;
+          color: #fff;
+          h1,
+          h2 {
+            font-weight: 100;
+            text-transform: uppercase;
+          }
+          h1 {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            margin: 0 0 0.5rem 0;
+          }
+
+          h2 {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            margin: 0 0 0.5rem 0;
+          }
+        }
+      }
+      #legalnotice {
+        flex-direction: column;
+        margin-left: 7rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 0.1rem solid rgba(255, 255, 255, 0.5);
+        > p {
+          color: #fff;
+          font-weight: 100;
+          margin: 0;
+          &.special {
+            border-top: 0.1rem solid rgba(255, 255, 255, 0.5);
+            margin: 1rem 0 0;
+            padding-top: 1rem;
+          }
+          > a {
+            color: #fff;
+          }
+        }
+      }
+      #tachusoBrand {
+        padding-left: 7rem;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: row;
+        align-content: baseline;
+        > span {
+          font-size: 1.2rem;
+          line-height: 3rem;
+          height: 3rem;
+          color: #fff;
+          font-weight: 100;
+        }
+        > i {
+          font-size: 2rem;
+          color: #fff;
+          line-height: 3rem;
+          height: 3rem;
+        }
+        > .tachusoLogo {
+          width: 2.4rem;
+          height: 2.4rem;
+          margin: 0.3rem 0.5rem;
+          > svg {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .tachusoName {
+          font-family: "Share Tech", sans-serif;
+          font-size: 1.6rem;
+          line-height: 3rem;
         }
       }
     }

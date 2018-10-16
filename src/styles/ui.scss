@@ -170,3 +170,16 @@ body {
     }
   }
 }
+
+.md-snackbar {
+  border-radius: 3rem !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  flex-direction: column;
+
+  &.md-position-center {
+    bottom: 2rem !important;
+    left: 2rem !important;
+    right: 2rem !important;
+    text-align: center;
+  }
+}

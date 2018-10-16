@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.ad55220bbf4f018ddd253001c6b63a90.js"
+  "/precache-manifest.64e933a26c3d0993fb77a297f8b982c1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "ldc-tagscloud"});
